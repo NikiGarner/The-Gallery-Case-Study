@@ -1,7 +1,28 @@
 @import "font";
+@import "reset";
+
+body{
+  background-image: url('../img/cement.jpg');
+  background-size: cover;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  margin: 1em 0 1em 0;
+  padding: 1em;
+  background-color: white;
+  text-align: center;
+  font-size: 2em;
+}
+
 .wrapper {
   width: 100%;
   margin: 0 auto;
+  background-color: black;
+  opacity: .7;
+  color: white;
+  margin-bottom: 20px;
 }
 
 .wrapper:after,
@@ -13,6 +34,9 @@
 
 [class*='column-'] {
   padding: 1em;
-  width: 100%;
-  border: 2px dotted red;
+  max-width: 100%;
+}
+
+h2 {
+  padding: 1em 0 1em 1em;
 }
