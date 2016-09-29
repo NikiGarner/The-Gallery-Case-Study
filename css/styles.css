@@ -27,8 +27,7 @@ body {
 .wrapper {
   width: 100%;
   margin: 0 auto;
-  background-color: black;
-  opacity: .7;
+  background-color: #665D54;
   color: white;
   margin-bottom: 20px; }
 
@@ -38,11 +37,30 @@ body {
   display: table;
   clear: both; }
 
-[class*='column-'] {
+.column-6 {
+  padding: 1em;
+  max-width: 50%;
+  float: left; }
+
+.column-12 {
   padding: 1em;
   max-width: 100%; }
 
 h2 {
-  padding: 1em 0 1em 1em; }
+  padding: 1em 0 1em 1em;
+  border-bottom: 2px dotted white;
+  font-style: italic;
+  font-size: 1.5em; }
+
+p {
+  font-size: 20px; }
+
+img {
+  max-width: 100%; }
+  img .right {
+    float: right; }
+
+a {
+  color: white; }
 
 /*# sourceMappingURL=styles.css.map */
