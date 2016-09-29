@@ -2,6 +2,18 @@
 * {
   font-family: 'Muli', sans-serif; }
 
+h2 {
+  padding: 1em 0 1em 1em;
+  border-bottom: 2px dotted white;
+  font-style: italic;
+  font-size: 1.5em; }
+
+p {
+  font-size: 20px; }
+
+a {
+  color: white; }
+
 *,
 *:after,
 *:before {
@@ -10,10 +22,6 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-
-body {
-  background-image: url("../img/cement.jpg");
-  background-size: cover; }
 
 .header {
   width: 100%;
@@ -24,18 +32,18 @@ body {
   text-align: center;
   font-size: 2em; }
 
+.wrapper:after,
+.row:after {
+  content: '';
+  display: table;
+  clear: both; }
+
 .wrapper {
   width: 100%;
   margin: 0 auto;
   background-color: #665D54;
   color: white;
   margin-bottom: 20px; }
-
-.wrapper:after,
-.row:after {
-  content: '';
-  display: table;
-  clear: both; }
 
 .column-6 {
   padding: 1em;
@@ -46,21 +54,13 @@ body {
   padding: 1em;
   max-width: 100%; }
 
-h2 {
-  padding: 1em 0 1em 1em;
-  border-bottom: 2px dotted white;
-  font-style: italic;
-  font-size: 1.5em; }
-
-p {
-  font-size: 20px; }
+body {
+  background-image: url("../img/cement.jpg");
+  background-size: cover; }
 
 img {
   max-width: 100%; }
   img .right {
     float: right; }
-
-a {
-  color: white; }
 
 /*# sourceMappingURL=styles.css.map */

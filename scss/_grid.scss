@@ -1,0 +1,33 @@
+.header {
+  width: 100%;
+  height: auto;
+  margin: 1em 0 1em 0;
+  padding: 1em;
+  background-color: white;
+  text-align: center;
+  font-size: 2em;
+}
+
+.wrapper:after,
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #665D54;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.column-6{
+  padding: 1em;
+  max-width: 50%;
+  float: left;
+}
+.column-12{
+  padding: 1em;
+  max-width: 100%;
+}
