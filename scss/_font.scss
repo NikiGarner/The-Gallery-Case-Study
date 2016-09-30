@@ -4,6 +4,12 @@
   font-family: 'Muli', sans-serif;
 }
 
+h1 {
+  font-size: 4em;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
 h2 {
   padding: 1em 0 1em 1em;
   border-bottom: 2px dotted white;
@@ -11,10 +17,69 @@ h2 {
   font-size: 1.5em;
 }
 
-p {
-  font-size: 20px;
+h4 {
+  padding: 1em;
 }
 
-a {
+p {
+  font-size: 20px;
+  padding: 2em;
+}
+ul {
+  padding: 2em;
+  li {
+    display: inline;
+    font-style: 1em;
+    padding: 1em;
+    a {
+      color: black;
+      text-decoration: none;
+      &:hover {
+        content: "[ ]";
+      }
+    }
+  }
+}
+
+.go a:before,
+.go a:after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+.go a:before {
+    margin-right: 10px;
+    content: '[';
+    -webkit-transform: translate(20px);
+    -moz-transform: translate(20px);
+    transform: translate(20px);
+}
+
+.go a:after {
+    margin-left: 10px;
+    content: ']';
+    -webkit-transform: translate(-20px);
+    -moz-transform: translate(-20px);
+    transform: translate(-20px);
+}
+
+.go a:hover:before,
+.go a:hover:after,
+.go a:focus:before,
+.go a:focus:after {
+    opacity: 1;
+    -webkit-transform: translate(0px);
+    -moz-transform: translate(0px);
+    transform: translate(0px);
+}
+
+a{
+  text-decoration: none;
   color: white;
+  h5{
+    margin: 1em;
+  }
 }

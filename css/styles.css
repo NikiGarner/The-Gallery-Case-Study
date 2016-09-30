@@ -2,17 +2,72 @@
 * {
   font-family: 'Muli', sans-serif; }
 
+h1 {
+  font-size: 4em;
+  padding-top: 1em;
+  padding-bottom: 2em; }
+
 h2 {
   padding: 1em 0 1em 1em;
   border-bottom: 2px dotted white;
   font-style: italic;
   font-size: 1.5em; }
 
+h4 {
+  padding: 1em; }
+
 p {
-  font-size: 20px; }
+  font-size: 20px;
+  padding: 2em; }
+
+ul {
+  padding: 2em; }
+  ul li {
+    display: inline;
+    font-style: 1em;
+    padding: 1em; }
+    ul li a {
+      color: black;
+      text-decoration: none; }
+      ul li a:hover {
+        content: "[ ]"; }
+
+.go a:before,
+.go a:after {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s; }
+
+.go a:before {
+  margin-right: 10px;
+  content: '[';
+  -webkit-transform: translate(20px);
+  -moz-transform: translate(20px);
+  transform: translate(20px); }
+
+.go a:after {
+  margin-left: 10px;
+  content: ']';
+  -webkit-transform: translate(-20px);
+  -moz-transform: translate(-20px);
+  transform: translate(-20px); }
+
+.go a:hover:before,
+.go a:hover:after,
+.go a:focus:before,
+.go a:focus:after {
+  opacity: 1;
+  -webkit-transform: translate(0px);
+  -moz-transform: translate(0px);
+  transform: translate(0px); }
 
 a {
+  text-decoration: none;
   color: white; }
+  a h5 {
+    margin: 1em; }
 
 *,
 *:after,
@@ -26,11 +81,10 @@ a {
 .header {
   width: 100%;
   height: auto;
-  margin: 1em 0 1em 0;
+  margin: 4em 0 4em 0;
   padding: 1em;
   background-color: white;
-  text-align: center;
-  font-size: 2em; }
+  text-align: center; }
 
 .wrapper:after,
 .row:after {
@@ -43,7 +97,8 @@ a {
   margin: 0 auto;
   background-color: #665D54;
   color: white;
-  margin-bottom: 20px; }
+  margin-bottom: 4em;
+  box-shadow: 0 8px 6px -6px black; }
 
 .column-6 {
   padding: 1em;
@@ -56,7 +111,7 @@ a {
 
 body {
   background-image: url("../img/cement.jpg");
-  background-size: cover; }
+  background-size: contain; }
 
 img {
   max-width: 100%; }
