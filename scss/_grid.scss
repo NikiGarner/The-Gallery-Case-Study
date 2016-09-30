@@ -1,11 +1,10 @@
 .header {
   width: 100%;
   height: auto;
-  margin: 1em 0 1em 0;
+  margin: 4em 0 4em 0;
   padding: 1em;
   background-color: white;
   text-align: center;
-  font-size: 2em;
 }
 
 .wrapper:after,
@@ -19,7 +18,8 @@
   margin: 0 auto;
   background-color: #665D54;
   color: white;
-  margin-bottom: 20px;
+  margin-bottom: 4em;
+  box-shadow: 0 8px 6px -6px black;
 }
 
 .column-6{
